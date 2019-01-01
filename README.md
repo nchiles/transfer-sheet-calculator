@@ -1,5 +1,5 @@
 # transfer-sheet-calculator
-<p>I made this tool to for working with heat transfer labels in screen printing. It can be used to calculate the minimum amount of transfer sheets to be printed to fulfill a job.
+<p>This tool can be used in screen printing to calculate the minimum amount of heat transfer sheets that need be printed to fulfill a job.
 
 <h3>Input</h3>
   <ul>
