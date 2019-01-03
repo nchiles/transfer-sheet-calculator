@@ -183,9 +183,15 @@ $("#submitbtn").click(function() {
 }); 
 
 //RESET ON RESET BUTTON CLICK
+// $("#resetbtn").click(function() {
+// 	location.reload();
+// }); 
+
 $("#resetbtn").click(function() {
-	location.reload();
-}); 
+	$('#ipcForm').trigger("reset");
+	$('.dimension-box').text('2.4"');
+	$("html, body").animate({ scrollTop: 0 }, 400);
+});
 
 
 
