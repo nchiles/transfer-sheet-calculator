@@ -182,11 +182,6 @@ $("#submitbtn").click(function() {
     $("html, body").animate({ scrollTop: $(document).height() }, 400);
 }); 
 
-//RESET ON RESET BUTTON CLICK
-// $("#resetbtn").click(function() {
-// 	location.reload();
-// }); 
-
 $("#resetbtn").click(function() {
 	$('#ipcForm').trigger("reset");
 	$('.dimension-box').text('2.4"');
