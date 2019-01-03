@@ -1,14 +1,14 @@
-body, html {
+html, body {
 	font: caption;
-	/*height: 800px;*/
-	background-color: #eaeaea;
+	height: 701px;
+	background-color: #ffffff1e;
 }
 
 h2 {
 	text-align: center;
-	padding: 12px 0;
+	padding: 8px 0;
 	margin: 0 0 24px 0;
-	background-color: #4f3a5d;
+	background-color: #0000002f;
 	color: #efefef;
 	font-weight: 400;
 	cursor: default;
@@ -16,8 +16,7 @@ h2 {
 
 h5 {
 	color: #fff;
-    background: #4f3a5de8;
-    /* border-radius: .25rem; */
+    background: #0000002f;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -27,18 +26,48 @@ h5 {
 	cursor: default;
 }
 
-.x {
-	padding-top: 40px;
-	color: #717171;
+/* The slider itself */
+.slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 12px; /* Specified height */
+	background: white; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+	border-radius: .25rem;
+	margin-top: 3px;
 }
 
-.size-breakdown {
-	margin-top: 15px;
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	/* background-image: url("/Users/natechiles/Desktop/w.png"); */
+	background-repeat:no-repeat;
+	background-position: center center;
+	width: 20px; /* Slider handle width */
+	height: 20px; /* Slider handle height */
+	background: #4CAF50; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+	border-radius: 1rem;	
+}
+
+.x {
+	padding-top: 40px;
+	color: #fff;
 }
 
 label {
 	margin-bottom: .1rem;
-	color: #717171;
+	color: #000000;
 }
 
 .label-size {
@@ -52,7 +81,7 @@ label {
 
 label, input, .form-control {
 	text-align: center;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 label, input, .form-control:hover {
@@ -67,19 +96,40 @@ label, input, .form-control:hover {
 	padding: 0 15px 0 15px;
 }
 
-.btn.btn-primary {
-	width: 100%;
-	font-weight: 400;
-	font-size: 20px;
+.btn-custom {
+	width: 35%;
+	font-weight: 600;
+	font-size: 18px;
+	border-radius: 100px;
+	background-color: #bdbdbd85;
+	color:#000000;
+	border: 1px solid #000000; 
+	padding: 7px;
+	outline: none;
+	font-weight: 600;
 }
 
-#submitbtn {
-	margin-bottom: 10px;
+.btn-custom:hover{
+	box-shadow: none;
+	background-color: #ffffff8a;
+	outline: none;
 }
 
-#resetbtn {
-	margin-bottom: 7px;
+.btn-custom:active:focus{
+	box-shadow: none;
+	background-color: #d1d1d183;
+	outline: none;
 }
+
+button:focus {
+	outline: 0;
+}
+
+/* .btn-custom:active:focus {
+	color: #ffffff; 
+	background-color: #161617; 
+	border-color: #494F57;
+  } */
 
 /*hide up down indicator in number boxes*/
 input::-webkit-outer-spin-button,
@@ -121,13 +171,14 @@ input:focus::-webkit-input-placeholder {
 	font-weight: 600;
 	padding: 0px;
 	text-align: center;
+	opacity: 1;
 }
 
 #per-sheet-response.results, #sheets-to-print {
-	background-color: #eaeaea;
+	background-color: transparent;
 	text-align: center;
 	font-size: 36px;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 }
 
 .dimension-box {
@@ -137,38 +188,6 @@ input:focus::-webkit-input-placeholder {
     color: black;
 	font-weight: 600;
 	margin-left: 15px;
+	margin-top: -12px;
 }
 
-/* The slider itself */
-.slider {
-	-webkit-appearance: none;  /* Override default CSS styles */
-	appearance: none;
-	width: 100%; /* Full-width */
-	height: 12px; /* Specified height */
-	background: white; /* Grey background */
-	outline: none; /* Remove outline */
-	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
-	transition: opacity .2s;
-	border-radius: .25rem;
-	margin-top: 3px;
-}
-
-/* Mouse-over effects */
-.slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
-}
-
-/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
-.slider::-webkit-slider-thumb {
-	-webkit-appearance: none; /* Override default look */
-	appearance: none;
-	/* background-image: url("/Users/natechiles/Desktop/w.png"); */
-	background-repeat:no-repeat;
-	background-position: center center;
-	width: 20px; /* Slider handle width */
-	height: 20px; /* Slider handle height */
-	background: #4CAF50; /* Green background */
-	cursor: pointer; /* Cursor on hover */
-	border-radius: 1rem;	
-}
