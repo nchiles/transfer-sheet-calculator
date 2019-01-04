@@ -182,11 +182,18 @@ $("#submitbtn").click(function() {
     $("html, body").animate({ scrollTop: $(document).height() }, 400);
 }); 
 
+//SCROLL DOWN TO RESULTS ON SUBMIT BUTTON CLICK
 $("#resetbtn").click(function() {
 	$('#ipcForm').trigger("reset");
 	$('.dimension-box').text('2.4"');
-	$("html, body").animate({ scrollTop: 0 }, 400);
+	$("html, body").animate({ scrollTop: 0 }, 100);
 });
+
+
+
+
+
+
 
 
 
@@ -200,11 +207,6 @@ $("#resetbtn").click(function() {
 //divide number by corresponding size in ratioBreakdownRoundedArr
 //create new array
 //get largest number in array 
-
-
-
-
-
 
 
 //////////GENERAL LOGIC TO FIND OUT RATIO ///////////

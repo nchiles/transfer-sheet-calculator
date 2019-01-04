@@ -19,20 +19,25 @@ mb.on('after-create-window', function() {
         targetWindow.webContents.send('form-received', labelwidth, labelheight, xsresponse, smresponse, mdresponse, lgresponse, xlresponse, twoxresponse, threexresponse, fourxresponse);
     };
 
-    // let tray = null
-    // tray = new Tray(__dirname + '/icons/icon4@2x.png')
-    // tray.setToolTip('This is my application.')
-
     const contextMenu = Menu.buildFromTemplate ([
-    //   {label: 'Show Dock Icon', click: () => { mb.app.dock.show(); }},
-    //   {type: 'separator'},
-      {label: 'Restart', click: () => { mb.app.quit();mb.app.relaunch(); }},
-      {type: 'separator'},
-      {label: 'Quit', click: () => {mb.app.quit ();}}
+        {label: 'Show Dock Icon', click: () => { mb.app.dock.show(); }},
+        {type: 'separator'},
+        {label: 'Restart', click: () => { mb.app.quit();mb.app.relaunch(); }},
+        {type: 'separator'},
+        {label: 'Quit', click: () => {mb.app.quit ();}}
     ])
+
+    mb.tray.on('click', (event) => {
+        if (event.ctrlKey) {   
+            mb.tray.popUpContextMenu (contextMenu);
+        }
+    });
+
     mb.tray.on ('right-click', () => {
-        mb.tray.popUpContextMenu (contextMenu);
-    }) 
+        mb.tray.popUpContextMenu(contextMenu);
+    })
+
+    mb.tray.setToolTip('Transfer Sheet Calculator\n(right click to close)');
 });
 
 
