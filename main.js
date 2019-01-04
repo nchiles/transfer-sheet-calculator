@@ -1,7 +1,5 @@
 var menubar = require('menubar');
-const { Menu, Tray } = require('electron')
-
-
+const { Menu } = require('electron');
 
 var mb = menubar({
     width: 443,
