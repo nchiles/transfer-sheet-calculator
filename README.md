@@ -2,7 +2,7 @@
 <h2>Installation</h2>
 <pre>npm install<br>npm start</pre>
 <p>Calculate the minimum amount of transfer sheets needed to fulfill a job (screen printing).
-<hr>
+
 <h2>Usage</h2>
 <h3>Input</h3>
   <ul>
@@ -19,4 +19,4 @@
     <li>Ratio of label sizes per sheet</li>
   </ul>
   
-<img width="60%" src="https://imgur.com/NSOaw4Q">" title="Application image showing output">
+<img width="60%" src="https://imgur.com/NSOaw4Q"> title="Application image showing output">
