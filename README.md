@@ -1,9 +1,9 @@
 # transfer-sheet-calculator
 <h2>Installation</h2>
 <pre>npm install<br>npm start</pre>
-<p>Calculate the minimum amount of transfer sheets needed to fulfill a job (screen printing).
-<hr>
+
 <h2>Usage</h2>
+<p>Calculate the minimum amount of transfer sheets needed to fulfill a job (screen printing).
 <h3>Input</h3>
   <ul>
     <li>Label dimensions</li>
@@ -14,9 +14,9 @@
   
 <h3>Output</h3>
   <ul>
-    <li>How many labels can fit on a standard 12"x12" transfer sheet</li>
+    <li>Total amount of labels that can fit on a standard 12"x12" transfer sheet, based on label dimensions</li>
     <li>Minimum number of sheets that need to be printed to fulfill the job</li>
-    <li>Ratio of label sizes per sheet</li>
+    <li>Ratio of label sizes needed per sheet</li>
   </ul>
   
-<img width="60%" src="https://imgur.com/NSOaw4Q">" title="Application image showing output">
+<img width="60%" src="https://i.imgur.com/NSOaw4Q.png" title="Application image showing output">
