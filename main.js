@@ -11,7 +11,8 @@ var mb = menubar({
     frame: false,
     titleBarStyle: 'customButtonsOnHover', //makes corners square due to bug (need to figure out how to make bottom 2 corners round)
     resizable: true,
-    show: false
+    show: false, 
+    preloadWindow: true
 })
 
 mb.on('after-create-window', function() {
@@ -37,7 +38,7 @@ mb.on('after-create-window', function() {
         mb.tray.popUpContextMenu(contextMenu);
     })
 
-    mb.tray.setToolTip('Transfer Sheet Calculator\n(right click to close)');
+    mb.tray.setToolTip('Transfer Sheet Calculator\n(right click for options)');
 });
 
 

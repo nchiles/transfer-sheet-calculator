@@ -32,8 +32,8 @@ h5 {
 	appearance: none;
 	width: 100%; /* Full-width */
 	height: 12px; /* Specified height */
-	background: white; /* Grey background */
 	outline: none; /* Remove outline */
+	background: white; /* Grey background */
 	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
 	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
 	transition: opacity .2s;
@@ -60,9 +60,14 @@ h5 {
 	border-radius: 1rem;	
 }
 
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+	margin-bottom: 15px;
+  }
+
 .x {
 	padding-top: 40px;
-	color: #fff;
+	color: rgb(0, 0, 0);
 }
 
 label {
@@ -79,12 +84,15 @@ label {
 	margin-top: -10px;
 }
 
-label, input, .form-control {
+input, .form-control {
 	text-align: center;
-	opacity: 0.8;
+	background: white; /* Grey background */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
 }
 
-label, input, .form-control:hover {
+input, .form-control:hover {
 	opacity: 1;
 }
 
@@ -101,7 +109,10 @@ label, input, .form-control:hover {
 	font-weight: 600;
 	font-size: 18px;
 	border-radius: 100px;
-	background-color: #bdbdbd85;
+	background: white; /* Grey background */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
 	color:#000000;
 	border: 1px solid #000000; 
 	padding: 7px;
@@ -111,8 +122,7 @@ label, input, .form-control:hover {
 
 .btn-custom:hover{
 	box-shadow: none;
-	background-color: #ffffff8a;
-	outline: none;
+	opacity: 1;
 }
 
 .btn-custom:active:focus{
@@ -125,12 +135,6 @@ button:focus {
 	outline: 0;
 }
 
-/* .btn-custom:active:focus {
-	color: #ffffff; 
-	background-color: #161617; 
-	border-color: #494F57;
-  } */
-
 /*hide up down indicator in number boxes*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -141,12 +145,6 @@ input::-webkit-inner-spin-button {
 
 input:focus::-webkit-input-placeholder { 
 	color:transparent; 
-}
-
-
-.slidecontainer {
-  width: 100%; /* Width of the outside container */
-  margin-bottom: 15px;
 }
 
 .form-control {
