@@ -22,10 +22,11 @@ mb.on('after-create-window', function() {
 
     const contextMenu = Menu.buildFromTemplate ([
         {label: 'Show Dock Icon', click: () => { mb.app.dock.show(); }},
+        {label: 'Hide Dock Icon', click: () => { mb.app.dock.hide(); }},
         {type: 'separator'},
         {label: 'Restart', click: () => { mb.app.quit();mb.app.relaunch(); }},
         {type: 'separator'},
-        {label: 'Quit', click: () => {mb.app.quit ();}}
+        {label: 'Quit', click: () => { mb.app.quit (); }}
     ])
 
     mb.tray.on('click', (event) => {

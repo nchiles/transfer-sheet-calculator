@@ -7,6 +7,11 @@
   "scripts": {
     "start": "electron ."
   },
+  "mac": {
+    "extendInfo": {
+      "LSUIElement": 1
+    }
+  },
   "author": "Nate Chiles",
   "license": "ISC",
   "devDependencies": {
